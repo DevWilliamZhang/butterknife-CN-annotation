@@ -157,6 +157,11 @@ public final class ButterKnifeProcessor extends AbstractProcessor {
     return ImmutableSet.of(OPTION_SDK_INT, OPTION_DEBUGGABLE);
   }
 
+
+  /**
+   * 把需要处理的注解添加进去 进行处理
+   * @return
+   */
   @Override public Set<String> getSupportedAnnotationTypes() {
     Set<String> types = new LinkedHashSet<>();
     for (Class<? extends Annotation> annotation : getSupportedAnnotations()) {
@@ -200,7 +205,6 @@ public final class ButterKnifeProcessor extends AbstractProcessor {
         error(typeElement, "Unable to write binding for type %s: %s", typeElement, e.getMessage());
       }
     }
-
     return false;
   }
 

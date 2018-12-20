@@ -10,6 +10,7 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 
 /**
  * Bind a field to a {@link Bitmap} from the specified drawable resource ID.
+ * 将字段绑定到来自指定可绘制资源ID的位图。
  * <pre><code>
  * {@literal @}BindBitmap(R.drawable.logo) Bitmap logo;
  * </code></pre>

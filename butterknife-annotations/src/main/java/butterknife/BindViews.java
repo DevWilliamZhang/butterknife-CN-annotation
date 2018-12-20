@@ -10,6 +10,7 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 /**
  * Bind a field to the view for the specified ID. The view will automatically be cast to the field
  * type.
+ * 将字段绑定到指定ID的视图。视图将自动转换为字段类型。
  * <pre><code>
  * {@literal @}BindViews({ R.id.title, R.id.subtitle })
  * List&lt;TextView&gt; titles;

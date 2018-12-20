@@ -14,13 +14,14 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 /**
  * Bind a method to an {@link OnCheckedChangeListener OnCheckedChangeListener} on the view for
  * each ID specified.
+ * 将方法绑定到视图上指定的每个ID上的{@link OnCheckedChangeListener OnCheckedChangeListener}。
  * <pre><code>
  * {@literal @}OnCheckedChanged(R.id.example) void onChecked(boolean checked) {
- *   Toast.makeText(this, checked ? "Checked!" : "Unchecked!", Toast.LENGTH_SHORT).show();
- * }
- * </code></pre>
+ *   Toast.makeText(this, checked
  * Any number of parameters from
- * {@link OnCheckedChangeListener#onCheckedChanged(android.widget.CompoundButton, boolean)
+ * {@link OnCheckedChangeListener# ? "Checked!" : "Unchecked!", Toast.LENGTH_SHORT).show();
+ *  * }
+ *  * </code></pre>onCheckedChanged(android.widget.CompoundButton, boolean)
  * onCheckedChanged} may be used on the method.
  *
  * @see OnCheckedChangeListener

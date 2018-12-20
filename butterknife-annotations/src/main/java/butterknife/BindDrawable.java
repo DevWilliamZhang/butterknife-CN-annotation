@@ -11,6 +11,7 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 
 /**
  * Bind a field to the specified drawable resource ID.
+ * 将字段绑定到指定的可绘制资源ID。
  * <pre><code>
  * {@literal @}BindDrawable(R.drawable.placeholder)
  * Drawable placeholder;
@@ -21,9 +22,12 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 @Target(FIELD)
 @Retention(RUNTIME)
 public @interface BindDrawable {
-  /** Drawable resource ID to which the field will be bound. */
+  /** Drawable resource ID to which the field will be bound.
+   * 字段将绑定到的可绘制资源ID */
   @DrawableRes int value();
 
-  /** Color attribute resource ID that is used to tint the drawable. */
+  /** Color attribute resource ID that is used to tint the drawable.
+   * 颜色属性资源ID，用于为可drawable着色。
+   * */
   @AttrRes int tint() default NO_RES_ID;
 }

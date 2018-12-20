@@ -9,6 +9,7 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 
 /**
  * Bind a field to the specified integer resource ID.
+ * 将字段绑定到指定的整数资源ID。
  * <pre><code>
  * {@literal @}BindInt(R.int.columns) int columns;
  * </code></pre>

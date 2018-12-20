@@ -43,6 +43,13 @@ import static java.lang.reflect.Modifier.PUBLIC;
 import static java.lang.reflect.Modifier.STATIC;
 import static java.util.Collections.singletonList;
 
+/**
+ * 此 reflect版 ButterKnife注释大部分和 常规版一致
+ *  类的后部分
+ *   public static Unbinder bind(@NonNull Object target, @NonNull View source) 以下
+ *  是核心 实现与常规版不同
+ *
+ */
 public final class ButterKnife {
   private ButterKnife() {
     throw new AssertionError();
@@ -139,6 +146,7 @@ public final class ButterKnife {
         break;
       }
 
+      //遍历 绑定成员变量
       for (Field field : targetClass.getDeclaredFields()) {
         int unbinderStartingSize = unbinders.size();
         Unbinder unbinder;
@@ -188,6 +196,7 @@ public final class ButterKnife {
         }
       }
 
+      //遍历methond 绑定 method
       for (Method method : targetClass.getDeclaredMethods()) {
         Unbinder unbinder;
 

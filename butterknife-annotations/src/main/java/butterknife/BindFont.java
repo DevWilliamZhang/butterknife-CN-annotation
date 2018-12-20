@@ -13,8 +13,9 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 
 /**
  * Bind a field to the specified font resource ID.
+ * 将字段绑定到指定的字体资源ID
  * <pre><code>
- * {@literal @}BindFont(R.font.comic_sans) Typeface comicSans;
+ * {@literal @}BindFont(R.font.comic_sans) Typeface comicSans; 字体comicSans
  * </code></pre>
  */
 @Target(FIELD)

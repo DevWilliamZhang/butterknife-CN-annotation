@@ -10,7 +10,7 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 /**
  * Bind a field to the specified array resource ID. The type of array will be inferred from the
  * annotated element.
- *
+ * 将字段绑定到指定的数组资源ID。数组的类型将从带注解的元素中推断出来。
  * String array:
  * <pre><code>
  * {@literal @}BindArray(R.array.countries) String[] countries;
