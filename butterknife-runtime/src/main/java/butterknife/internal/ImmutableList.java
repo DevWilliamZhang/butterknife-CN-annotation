@@ -6,6 +6,7 @@ import java.util.RandomAccess;
 /**
  * An immutable list of views which is lighter than {@code
  * Collections.unmodifiableList(new ArrayList<>(Arrays.asList(foo, bar)))}.
+ * 不可变视图列表
  */
 final class ImmutableList<T> extends AbstractList<T> implements RandomAccess {
   private final T[] views;
